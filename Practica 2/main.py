@@ -23,10 +23,19 @@ def saldo():
     print("Su saldo actual es: ", saldo)
 
 def avrg_debitos():
-    pass
+    promedio = sum (debitos) / len (debitos)
+    print ("El promedio de debitos es", promedio)
+
 
 def debito_mayor():
-    pass
+    debitos.sort()
+    largest_element = debitos[0]
+
+    for i in range (0, len(debitos)):
+        if (debitos[i] > largest_element):
+            largest_element = debitos [i]
+    
+    print ("El debito mas grande es: ", largest_element)
 
 
 
@@ -60,9 +69,9 @@ def main ():
         elif opcion == 3:
             saldo()
         elif opcion == 4:
-            pass
+            avrg_debitos()
         elif opcion == 5:
-            pass
+            debito_mayor()
         elif opcion == 6:
             pass
         elif opcion == 7:
