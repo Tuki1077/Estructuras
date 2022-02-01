@@ -48,16 +48,27 @@ def main ():
             val_debitos = int(input ())
             debitos.append(val_debitos)
 
-    opcion = int (input ('Ingrese una opcion: \n 1. Total de Creditos \n  2. Total de Debitos \n 3. Saldo \n 4. Promedio de debitos \n 5. Mostrar Debito mas grande \n 6. Eliminar creditos'))
+    while (True):
+        opcion = int (input ('Ingrese una opcion: \n 1. Total de Creditos \n 2. Total de Debitos \n 3. Saldo \n 4. Promedio de debitos \n 5. Mostrar Debito mas grande \n 6. Eliminar creditos \n 7. Exit \n'))
+        print ("------------------------------")
 
-    if opcion == 1:
-        total_creditos()
-        contador = contador + 1
-    elif opcion == 2:
-        total_debitos()
-    elif opcion == 3:
-        saldo()
-    elif opcion == 4:
-        pass
+        if opcion == 1:
+            total_creditos()
+            contador = contador + 1
+        elif opcion == 2:
+            total_debitos()
+        elif opcion == 3:
+            saldo()
+        elif opcion == 4:
+            pass
+        elif opcion == 5:
+            pass
+        elif opcion == 6:
+            pass
+        elif opcion == 7:
+            print (quit)
+            quit()
+            
+
 
 main()
