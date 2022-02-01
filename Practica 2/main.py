@@ -17,7 +17,10 @@ def total_debitos ():
     print ("La suma total de debitos es: ", suma_debitos)
 
 def saldo():
-    pass
+    suma_debitos = sum (debitos)
+    suma_creditos = sum (creditos)    
+    saldo = suma_debitos - suma_creditos
+    print("Su saldo actual es: ", saldo)
 
 def avrg_debitos():
     pass
@@ -53,6 +56,8 @@ def main ():
     elif opcion == 2:
         total_debitos()
     elif opcion == 3:
+        saldo()
+    elif opcion == 4:
         pass
 
 main()
