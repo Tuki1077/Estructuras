@@ -4,12 +4,23 @@
 creditos = []
 debitos = []
 
+def agregar_credito(credito):
+    try: 
+        float(credito)
+        creditos.append(credito)
+        return True
+    except:
+        return False
+
 def total_creditos():
     #Encontramos la suma total de los creditos usando "sum"
-    print ("Sus creditos son: ")
-    print (creditos)
-    suma = sum(creditos)
-    print ("La suma total de creditos es: ", suma)
+    #print ("Sus creditos son: ")
+    #print (creditos)
+    if len(creditos) > 0:
+        suma = sum(creditos)
+        return suma
+    else:
+        return 0
 
 def total_debitos ():
     #Encontramos la suma total de debitos usando "sum"
@@ -59,8 +70,9 @@ def main ():
     if n >= 5:
         print('Ingrese sus valores:')
         for i in range(0, n):
-            val_creditos = int(input())
-            creditos.append(val_creditos)
+            val_creditos = input()
+            if agregar_credito(val_creditos) == False:
+                print ("Valor no es valido!")
 
     #Llenamos el array de debitos
     n1 = int(input('Ingrese la cantidad de debitos que desea agregar (Minimo 10!): '))
