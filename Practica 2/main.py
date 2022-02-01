@@ -45,6 +45,7 @@ def debito_mayor():
 def eliminar_credito():
     print ("Sus creditos actuales son:", creditos, "\n")
     eliminar = int(input ("Indique segun la posicion, cual desea eliminar \n"))
+    eliminar = eliminar - 1
     creditos.pop(eliminar)
     print ("Sus nuevos creditos son: ", creditos)
 
@@ -86,7 +87,7 @@ def main ():
         elif opcion == 5:
             debito_mayor()
         elif opcion == 6:
-            pass
+            eliminar_credito()
         elif opcion == 7:
             print (quit)
             quit()
