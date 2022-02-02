@@ -38,13 +38,18 @@ while (True):
     elif opcion == 3:
         function.saldo()
         print ("Su saldo total: ", function.saldo())
+        contador = contador + 1
     elif opcion == 4:
         function.avrg_debitos()
+        contador = contador + 1
     elif opcion == 5:
         function.debito_mayor()
+        contador = contador + 1
     elif opcion == 6:
         function.eliminar_credito()
+        contador = contador + 1
     elif opcion == 7:
+        print ("La cantidad de ejecuciones fue de: ", contador)
         print (quit)
         quit()
             

@@ -22,8 +22,8 @@ class prueba_main (unittest.TestCase):
         self.assertEqual(fc.total_debitos(), 25)
     
     def test_saldo(self):
-        self.assertFalse(fc.saldo(), 0)
-    
+        self.assertFalse(fc.saldo(), 0)  
+
 
 
 if __name__ == '__main__':
