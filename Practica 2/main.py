@@ -18,8 +18,9 @@ n1 = int(input('Ingrese la cantidad de debitos que desea agregar (Minimo 10!): '
 if n1 >= 10:
     print ('Ingrese sus valores: ')
     for i in range (0,n1):
-        val_debitos = int(input ())
-        function.debitos.append(val_debitos)
+        val_debitos = input ()
+        if function.agregar_debito(val_debitos) == False:
+            print ("Valor no es valido")
 
 while (True):
     print ("------------------------------")
@@ -28,11 +29,15 @@ while (True):
 
     if opcion == 1:
         function.total_creditos()
+        print ("La suma total de creditos es: ", function.total_creditos())
         contador = contador + 1
     elif opcion == 2:
         function.total_debitos()
+        print ("La suma total de debitos es: ", function.total_debitos())
+        contador = contador + 1
     elif opcion == 3:
         function.saldo()
+        print ("Su saldo total: ", function.saldo())
     elif opcion == 4:
         function.avrg_debitos()
     elif opcion == 5:
