@@ -1,9 +1,15 @@
 import functions as func
+from typing import NamedTuple
+
+class Struct(NamedTuple):
+    quadrant: str
+
 
 print ("Ingrese dos valores para poder determinar si el cuadrante en el que se encuentra!")
-X = float(input("Porfavor ingrese su primera valor: \n"))
-Y = float(input("Porfavor ingrese su segundo valor: \n"))
+X = float(input("Porfavor ingrese su primera valor: "))
+Y = float(input("Porfavor ingrese su segundo valor: "))
 
-Quadrant = func.quadrant(X, Y)
+my_value = Struct(func.quadrant(X,Y))
 
-print (Quadrant)
+
+print (my_value)
