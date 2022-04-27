@@ -6,4 +6,5 @@ Trabajos de estructura de datos
 3. [Practica 3](https://github.com/Tuki1077/Estructuras/tree/main/Practica%203)
 4. [Practica 4](https://github.com/Tuki1077/Estructuras/tree/main/Practica%204)
 5. [Practica 5 Graphviz](https://github.com/Tuki1077/Estructuras/tree/main/Practica%20Graphviz)
-6. [Iterative Heap Sort](https://github.com/Tuki1077/Estructuras/tree/main/Iterative%20Heap%20Sort)
+6. [B+ Tree](https://github.com/Tuki1077/Estructuras/tree/main/B%2B%20Tree)
+7. [Iterative Heap Sort](https://github.com/Tuki1077/Estructuras/tree/main/Iterative%20Heap%20Sort)
